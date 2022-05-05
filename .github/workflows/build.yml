@@ -26,8 +26,9 @@ jobs:
       - run: mv assets/modelproject.actico example
       - run: mv example actico.python-example
       - run: cd actico.python-example
-      - run: export files-directory = `pwd`
-      - run: echo $files-directory
+
+      - run: export FILESDIR=`pwd`
+      - run: echo $FILESDIR
 
       - run: cd actico.python-example
       - run: pwd
